@@ -1,0 +1,22 @@
+#+TITLE:Chaos Garden Technology Stack
+#+AUTHOR:Dan Dennison
+
+* License
+I use the [[https://www.mozilla.org/en-US/MPL/2.0/][Mozilla Public License 2.0]] (MPL 2.0).  This is a weak copy-left license.  Basically, it means you can use the software "as is" without doing anything extra. If you modify some of the source files from this project, you must make the modified version's source code available (but not your other your files).
+* Version Control
+I am using git with the project available at [[https://github.com/dandennison84/chaos-garden][chaos-garden]].
+** Workflow
+I am using the [[https://git-scm.com/docs/gitworkflows][git's own gitworkflows]] described in the man pages.
+* Issue Tracking
+** GitHub Issue Tracking
+You can open issues at [[https://github.com/dandennison84/chaos-garden/issues][chaos-garden issues]].
+* Build System
+  Unknown at this time.
+* Programming Language
+  Unknown at this time.
+* Architectural Model
+I am following [[https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html][Clean Architecture]] and especially [[https://github.com/coi-gov-pl/spring-clean-architecture][here]].  Clean Architecture focuses on the use case surrounding the system and separates things like data sources and UIs from the core of the system to details surrounding the system.  It makes testing the overall system easier as there are tests cases for each use cases and these tests help document and explain the system.
+* Development Process
+I have a simple philosophy for writing code:  Keep it simple, eliminate dependencies, name things well, and don't repeat yourself.  Any more formal design system has many downsides that are often overlooked in the discussion of its benefits.  Even something as venerable as [[https://en.wikipedia.org/wiki/SOLID][SOLID]] has its own issues.  It can create a blizzard of dependencies and a plethora of small classes.  This doesn't necessarily scale.  One must weight the costs and benefits of these decisions.  This is why I like my more organic principles.  They apply to OO, they apply to structured top-down/bottom-up and decomposition approaches.  They apply to functional styles.
+The most common corralation to the number of bugs in a program is simply the number of lines of code in the program.  More is not better.  More is more complicated, harder to understand, difficult to change.  This is why we keep it simple.  Do the simplest thing that solves the use case.  No more.  Do not future proof it.
+* Development Stack
